@@ -5,11 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Dan's PokeDex</title>
 </head>
 
 <body>
+    <header>
+        <img src="./assets/img/pokeball.png" alt="pokeball" />
+        <h1>Dan's Pokedex!!!</h1>
+        <img src="./assets/img/pokeball.png" alt="pokeball" />
+    </header>
+    <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Pokemon</a>
+    </nav>
+    <section class="search-and-sort">
+        <label class="search-bar">
+            <p>SEARCH:</p>
+            <input type="text" />
+        </label>
+        <div class="sort">
+        <p id="sort-title">SORT:</p>
+            <label>
+                <input type="radio" name="sort" value="type" id="sort1">TYPE
+            </label>
+            <label>
+                <input type="radio" name="sort" value="number" id="sort2">NUMBER
+            </label>
+            <label>
+                <input type="radio" name="sort" value="attack" id="sort3">ATTACK
+            </label>
+            <label>
+                <input type="radio" name="sort" value="defense" id="sort4">DEFENSE
+            </label>
+        </div>
+    </section>
+    <section class="pagination">
+        <p>Showing <span class="number-shown">1</span> of <span class="number-total">151</span></p>
+        <p>Page <span class="page-shown">1</span> of <span class="page-total">50</span></p>
+    </section>
+    <main class="pokedex">
+        <figure class="entry">
+            <p class="info">
+                Name: Venusaur
+                Number: 3
+                Type: Grass/Poison
+                HP: 80
+                Attack: 82
+                Defense: 83
+            </p>
+            <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="venusaur" class="poke-pic" />
+            <p class="description">There is a large flower on Venusaur's back. The flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flower's aroma soothes the emotions of people.</p>
+        </figure>
+        <figure class="entry">
+            <p class="info">
+                Name: Venusaur
+                Number: 3
+                Type: Grass/Poison
+                HP: 80
+                Attack: 82
+                Defense: 83
+            </p>
+            <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="venusaur" class="poke-pic" />
+            <p class="description">There is a large flower on Venusaur's back. The flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flower's aroma soothes the emotions of people.</p>
+        </figure>
+        <figure class="entry">
+            <p class="info">
+                Name: Venusaur
+                Number: 3
+                Type: Grass/Poison
+                HP: 80
+                Attack: 82
+                Defense: 83
+            </p>
+            <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="venusaur" class="poke-pic" />
+            <p class="description">There is a large flower on Venusaur's back. The flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flower's aroma soothes the emotions of people.</p>
+        </figure>
+    </main>
+    <footer>
+        <p>ZOMGPOKEMON</p>
+    </footer>
 
     <script type="module" src="app.js"></script>
 </body>
